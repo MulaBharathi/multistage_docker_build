@@ -17,8 +17,8 @@ RUN pip install --upgrade pip \
 # Copy only your application code
 COPY app.py .
 
-# Stage 2: Production Stage (small)
-FROM python:3.11-alpine
+# Stage 2: Production Stage 
+FROM python:3.11-slim
 
 WORKDIR /app
 
